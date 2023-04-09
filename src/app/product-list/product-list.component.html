@@ -12,5 +12,6 @@
   <button type="button" (click)="share()">Share</button>
 
   <!-- takes a product from products as input-->
-  <app-product-alerts [product]="product"> </app-product-alerts>
+  <app-product-alerts [product]="product" (notify)="onNotify()">
+  </app-product-alerts>
 </div>
